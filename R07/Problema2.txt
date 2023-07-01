@@ -1,0 +1,13 @@
+    .text
+    .align 2
+
+    lui t0, 0x10000    
+    li t1, 0xFE        
+    sw t1, 12(t0)    
+
+    
+    lui t2, 0x10000    
+    lw x10, 12(t2)     
+
+    .data
+    .align 2
